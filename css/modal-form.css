@@ -1,0 +1,237 @@
+/*MODAL BOX*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.addmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.add-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.addclose {
+  color: red;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right:5px;
+  padding:1px;
+}
+
+.addclose:hover,
+.addclose:focus {
+  color: red;
+  background:white;
+  text-decoration: none;
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(10deg); }
+}
+
+/* The Edit Close Button */
+.editclose {
+  color: red;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right:5px;
+  padding:1px;
+}
+
+.editclose:hover,
+.editclose:focus {
+  color: red;
+  background:white;
+  text-decoration: none;
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(10deg); }
+}
+
+.add-modal-header {
+  padding: 1px;
+  color: white;
+}
+
+/*.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}*/
+
+@media screen and (max-width: 600px) {
+.modal-content {
+	width:85%;
+}	
+}
+/*FORM*/
+
+.add-div {
+padding: 7px;
+width: 100%;
+}
+.add-modal {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+  margin: 1px auto;
+  border-radius: 10px;
+
+}
+
+.add-modal label {
+  margin: 1px 1px 1px 1px;
+  color:red;
+}
+
+.mod-inp,select {
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  padding: 8px;
+  margin-top:5px;
+  float:left;
+  width: 100%;
+  outline: none;
+  border: 1px solid #B0CFE0;
+  -webkit-transition: all 0.10s ease-in-out;
+  -moz-transition: all 0.10s ease-in-out;
+  -ms-transition: all 0.10s ease-in-out;
+  -o-transition: all 0.10s ease-in-out;
+
+
+}
+.add-modal input:hover,textarea:hover,select:hover{
+  
+  box-shadow: 0 0 15px #B0CFE0;
+}
+
+.add-modal button {
+  
+  /*-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+  box-shadow: inset 0px 1px 0px 0px #3985B1;
+  background-color: #216288;
+  border: 1px solid #17445E;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 8px 18px;
+  margin-top:15px;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-serif;*/
+
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: green; 
+  color: white; 
+  border: 2px solid white;
+  border-radius: 6px;
+
+}
+
+.add-modal button:hover {
+  /*background: linear-gradient(to bottom, #0000ff 5%, #bf00ff 100%);
+  background-color: #28739E;*/
+
+   background-color: white;
+  color: green;
+  border: 2px solid green;
+}
+
+.add-modal a{color:white;}
+.add-modal a:hover{color:green;}
+
+.filter-search {
+  border:1px solid white;
+  padding:5px;
+  outline: none;
+  color: #008CBA;
+}
+.filter-search:hover{
+/*box-shadow: 0 0 15px #B0CFE0;*/
+border:2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  ..mod-inp,select {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .add-modal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+.add-div {
+padding: 5px;
+width: 100%;
+}
+/*button {
+  width:80px;
+}*/
+.add-modal-content {
+  width:90%;
+}
+}
+
+@media screen and (max-width: 750px) {
+  .add-modal-content {
+  width:90%;
+}
+}

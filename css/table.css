@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+table {
+  border-collapse: collapse;
+  /*display: relative;*/
+  width:100%;
+  /*position: block;*/
+  right:0;
+  table-layout: fixed;
+  background: #FAFAFA;
+}
+
+th{
+  padding:1px 5px 1px;
+  text-align: left;
+  border: 2px solid #D9E4E6;
+  border-radius: 6px; 
+  /*font-size:14px;*/
+  /*font-family: "Sofia", sans-serif;*/
+  background-color: #008CBA;
+  color: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  width: 120px;
+  word-break: break-word;
+  height: 40px;
+  overflow: hidden;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 700; 
+}
+
+td {
+  width: 120px;
+  word-break: break-word;
+  overflow: hidden;
+  text-align: left;
+  padding: 4px;
+  border: 1px solid #D9E4E6;
+  border-radius: 0px; 
+  font-size:13px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+tr:hover {color:blue;background-color: yellow;font-weight: bold;}
+
+#tbl {
+  /*position: relative;*/
+  height:100vh;
+  width:100%;
+  overflow-x:auto;
+  overflow-y:auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+}
+#tbl::-webkit-scrollbar {
+  display: none;
+}
+
+#tbl-sml {
+  /*position: relative;*/
+  height:100vh;
+  width:75%;
+  overflow-x:auto;
+  overflow-y:auto;
+  /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);*/
+}
+#tbl-sml::-webkit-scrollbar {
+  display: none;
+}
+
+#tbl-sml-all {
+  /*position: relative;*/
+  height:100vh;
+  width:50%;
+  margin-bottom:20px;
+  overflow-x:auto;
+  overflow-y:auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+}
+#tbl-sml-all::-webkit-scrollbar {
+  display: none;
+}
+
+#tbl-modal {
+  height:70vh;
+  width:100%;
+  overflow-x:auto;
+  overflow-y:auto;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+/*#tbl-modal::-webkit-scrollbar {
+  display: none;
+}*/
+
+#tbl-modal-inline {
+  height:auto;
+  width:90%;
+  display:block;
+  position:relative;
+  left:5%;
+  overflow-y:scroll;
+}
+#tbl-modal-inline::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  font-size:15px;
+}
+
+.filter-search {
+  border:1px solid white;
+  padding:5px;
+  outline: none;
+  color: #008CBA;
+}
+.filter-search:hover{
+/*box-shadow: 0 0 15px #B0CFE0;*/
+border:2px solid white;
+}
+
+.all-header {
+  display:block;
+  text-align:center;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  padding:5px;
+  width:100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #008CBA;
+  border: 1px solid #FAFAFA;
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight:bold;
+}
+
+
+
+/*MEDIA QUERY FOR MOB, TAB & DESK*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #tbl-sml,#tbl-sml-all {
+    width:100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #tbl-sml,#tbl-sml-all {
+    width:100%;
+  }
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */  
+@media only screen and (min-width: 768px) {
+  #tbl-sml,#tbl-sml-all {
+    width:100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ #tbl-sml {
+  width:75%;
+  }
+  #tbl-sml-all {
+    width:50%;
+  }
+}  
